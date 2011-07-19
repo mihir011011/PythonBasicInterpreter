@@ -1,0 +1,11 @@
+Basic Interpreter Project
+
+This project will be to write an interpreter for a minimal form of BASIC. This minimal form of BASIC has only 1 data type, integer, and the only identifiers are single capital letters (i.e. there are only 26 possible identifiers). There are only 5 types of statements in this form of BASIC:
+
+1) LET statement: LET {variable} = {expression}
+2) IF statement: IF {boolean expression} GOTO {line number}
+3) GOTO statement: GOTO {line number}
+4) PRINT statement: PRINT {variable}
+5) STOP statement
+
+Each statement must be preceded by a line number. For convenience, each line number must be between 1 and 999. Also, the expressions will be either a variable, a constant, or a simple arithmetic operation (addition, subtraction, multiplication, or division). The boolean expressions are of the form: operand relative_operator operand where the 6 relative operators are equal to, less than, greater than, not equal to, less than or equal to, and greater than or equal to and an operand is either a constant or a variable. The interpreter will parse the BASIC program and build some intermediate data structures. These data structures will then be interpreted to execute the program. All tokens in this language are separated by white space. The parsing algorithm should detect any syntactical or semantic error. The first such error discovered should cause an appropriate error message to be printed, and then the interpreter should abort. Run-time errors should also be detected with appropriate error messages being printed.
