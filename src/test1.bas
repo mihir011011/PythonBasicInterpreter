@@ -1,0 +1,4 @@
+10 LET X = 3 
+20 LET Y = 4
+50 PRINT X
+60 STOP
